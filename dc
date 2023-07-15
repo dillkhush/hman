@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hotel Management System</title>
+  <style>
+    /* CSS styles for the hotel management system */
+    body {
+      font-family: Arial, sans-serif;
+    }
+  
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+  
+    h1 {
+      text-align: center;
+    }
+  
+    .form-group {
+      margin-bottom: 20px;
+    }
+  
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+  
+    input[type="text"], input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hotel Management System</h1>
+  
+    <div class="form-group">
+      <label for="room-number">Room Number:</label>
+      <input type="number" id="room-number" placeholder="Enter room number">
+    </div>
+  
+    <div class="form-group">
+      <label for="guest-name">Guest Name:</label>
+      <input type="text" id="guest-name" placeholder="Enter guest name">
+    </div>
+  
+    <div class="form-group">
+      <label for="check-in-date">Check-in Date:</label>
+      <input type="text" id="check-in-date" placeholder="Enter check-in date">
+    </div>
+  
+    <div class="form-group">
+      <label for="check-out-date">Check-out Date:</label>
+      <input type="text" id="check-out-date" placeholder="Enter check-out date">
+    </div>
+  
+    <button id="book-button">Book Room</button>
+  </div>
+  
+  <script>
+    // JavaScript code for handling form submission
+    document.getElementById("book-button").addEventListener("click", function() {
+      var roomNumber = document.getElementById("room-number").value;
+      var guestName = document.getElementById("guest-name").value;
+      var checkInDate = document.getElementById("check-in-date").value;
+      var checkOutDate = document.getElementById("check-out-date").value;
+  
+      // Perform validation and further processing
+      // ...
+  
+      // Example: Print the form values to the console
+      console.log("Room Number:", roomNumber);
+      console.log("Guest Name:", guestName);
+      console.log("Check-in Date:", checkInDate);
+      console.log("Check-out Date:", checkOutDate);
+    });
+  </script>
+</body>
+</html>
